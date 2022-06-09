@@ -1,0 +1,39 @@
+<?php
+session_start();
+?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forgot Password</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="inner-box">
+                <form action="./Forgotten.php" method="post">
+                    <h3>Enter Your Email Address.</h3>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email Address" required autofocus autocomplete="on" />
+                    <br>
+                    <label for="password">New Password:</label>
+                    <input type="password" name="password" placeholder="New Password" require autofocus/>
+                    <br>
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" name="cpassword" placeholder="Confirmation Password" require/>
+                    <br>
+                    <div class="btn-group">
+                        <button class="submit" type="submit" name="submit">Send Query</button>
+                        <button class="reset " type="reset " name="forget " value="Send Recovery Link ">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    </html>

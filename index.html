@@ -1,0 +1,66 @@
+<?php
+session_start();
+?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta Http-Equiv="Cache-Control" Content="no-cache">
+        <meta Http-Equiv="Pragma" Content="no-cache">
+        <meta Http-Equiv="Expires" Content="0">
+        <title>3D Flip Login & Registration Form</title>
+        <link rel="stylesheet" href="includes.inc/styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>Login</h2>
+                        <form action="./includes.inc/register.inc.php" method="post">
+                            <input type="email" name="logEmail" class="input-box" placeholder=" Email" required />
+                            <input type="password" name="logPassword" class="input-box" placeholder="password" required />
+                            <button type="submit" name="loggin" class="submit-btn">
+                            Submit
+                        </button>
+                            <input type="checkbox" /><span>Remember me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">
+                        I'm New Here
+                    </button>
+                        <a href="../3D FripRegLogin Design/includes.inc/fogotten/forgot.html">Forgot Password&#62;&gt;</a>
+                        <a href="../index.html">&#60;&lt;back</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER</h2>
+                        <form action="./includes.inc/register.inc.php" method="post">
+                            <input type="text" name="name" class="input-box" placeholder=" Your Full Name" required />
+                            <input type="email" name="email" class="input-box" placeholder="Email" required />
+                            <input type="number" name="contact" class="input-box" placeholder="contact" required />
+                            <input type="text" name="location" class="input-box" placeholder="location" required />
+                            <input type="text" name="city" class="input-box" placeholder="city" required />
+                            <input type="text" name="country" class="input-box" placeholder="country" required />
+                            <input type="password" name="password" class="input-box" placeholder="password" required />
+                            <input type="password" name="cpassword" class="input-box" placeholder="conform password" required />
+                            <button type="submit" name="register" class="submit-btn">
+                            Submit
+                        </button>
+                            <input type="checkbox" /><span>Remember me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">
+                        I've an account
+                    </button>
+                        <a href="../3D FripRegLogin Design/includes.inc/fogotten/forgot.html">Forgot Password &#62;&gt;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./includes.inc/main.js"></script>
+    </body>
+
+    </html>
